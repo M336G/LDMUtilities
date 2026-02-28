@@ -32,7 +32,7 @@
 		},
 		"disable-ldm-button": {
 			"name": "Disable LDM button",
-			"description": "Hides the Low Detail Mode button on levels that do not support it",
+			"description": "Disable the Low Detail Mode button on levels that do not support it",
 			"type": "bool",
 			"default": true
 		}
