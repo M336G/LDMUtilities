@@ -1,0 +1,40 @@
+{
+	"geode": "5.1.0",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "m336.ldm-utilities",
+	"name": "LDM Utilities",
+	"version": "v1.0.0",
+	"developer": "M336",
+	"description": "A small utility mod for Low Detail Mode!",
+  	"links": {
+    	"source": "https://github.com/M336G/LDMUtilities"
+  	},
+  	"issues": {
+    	"info": "Having a problem with the mod? Report the issue on the GitHub repository",
+    	"url": "https://github.com/M336G/LDMUtilities/issues"
+  	},
+  	"tags": [
+    	"utility",
+		"enhancement",
+    	"interface"
+  	],
+	"settings": {
+		"auto-ldm": {
+			"name": "Auto LDM",
+			"description": "Automatically enables Low Detail Mode on levels that support it",
+			"type": "bool",
+			"default": false
+		},
+		"disable-ldm-button": {
+			"name": "Disable LDM button",
+			"description": "Hides the Low Detail Mode button on levels that do not support it",
+			"type": "bool",
+			"default": true
+		}
+	}
+}
