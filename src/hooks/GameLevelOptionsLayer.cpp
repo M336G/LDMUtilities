@@ -1,6 +1,6 @@
 #include <Geode/modify/GameLevelOptionsLayer.hpp>
-#include "../managers/SettingsManager.h"
-#include "../utils/Utils.h"
+#include "../managers/SettingsManager.hpp"
+#include "../utils/Utils.hpp"
 
 using namespace geode::prelude;
 
@@ -11,12 +11,12 @@ class $modify(GameLevelOptionsLayer) {
         if (!SettingsManager::DisableLdmButton)
             return;
 
-        auto* layer = m_mainLayer->getChildByType<CCLayer>(-1);
+        auto *layer = m_mainLayer->getChildByType<CCLayer>(-1);
         if (!layer) return;
 
-        auto* label = layer->getChildByType<CCLabelBMFont>(0);
+        auto *label = layer->getChildByType<CCLabelBMFont>(0);
         if (!label) return;
-        auto* toggle = m_buttonMenu->getChildByType<CCMenuItemToggler>(0);
+        auto *toggle = m_buttonMenu->getChildByType<CCMenuItemToggler>(0);
         if (!toggle) return;
 
         if (!SettingsManager::LegacyLdmCheck) {

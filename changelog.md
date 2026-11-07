@@ -1,3 +1,6 @@
+# v1.1.2
+- Ported the mod to 2.2091
+
 # v1.1.1
 - Made the LDM check better/more accurate overall
 

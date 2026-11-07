@@ -8,7 +8,7 @@ else()
 endif()
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(LDMUtilities VERSION 1.1.1)
+project(LDMUtilities VERSION 1.1.2)
 
 set(GEODE_PACKAGE_ZSTD ON)
 

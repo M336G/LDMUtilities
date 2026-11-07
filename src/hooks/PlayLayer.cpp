@@ -1,5 +1,5 @@
 #include <Geode/modify/PlayLayer.hpp>
-#include "../managers/SettingsManager.h"
+#include "../managers/SettingsManager.hpp"
 
 class $modify(PlayLayer) {
     struct Fields {
@@ -7,7 +7,7 @@ class $modify(PlayLayer) {
         bool m_modifiedLdm = false;
     };
 
-    bool init(GJGameLevel *level, bool useReplay, bool dontCreateObjects) {
+    bool init(GJGameLevel *level, bool dontCreateObjects) {
         if (SettingsManager::AutoLdm && level->m_lowDetailMode) {
             m_fields->m_previousLdmToggle = level->m_lowDetailModeToggled;
             
@@ -17,7 +17,7 @@ class $modify(PlayLayer) {
             m_fields->m_modifiedLdm = true;
         }
 
-        return PlayLayer::init(level, useReplay, dontCreateObjects);
+        return PlayLayer::init(level, dontCreateObjects);
     };
 
     void onQuit() {
