@@ -27,7 +27,7 @@ class $modify(GameLevelOptionsLayer) {
                         return;
 
                     toggle->toggle(false);
-                    toggle->setClickable(false);
+                    toggle->setEnabled(false);
 
                     label->setOpacity(0.5f * 255);
                     toggle->setCascadeOpacityEnabled(true);
@@ -39,7 +39,7 @@ class $modify(GameLevelOptionsLayer) {
                 return;
 
             toggle->toggle(false);
-            toggle->setClickable(false);
+            toggle->setEnabled(false);
 
             label->setOpacity(0.5f * 255);
             toggle->setCascadeOpacityEnabled(true);
